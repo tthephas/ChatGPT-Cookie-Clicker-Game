@@ -5,11 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Cookie Clicker Game</h1>
-		<img id="cookie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYj7iOoATAvOu1h8uSLbQaMXllgEGSIn4H0FrDzHs&s" alt="Cookie">
+	<h1>Cookie Clicker Game</h1>
+	<div id="game">
+		<a href="#"><img id="cookie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYj7iOoATAvOu1h8uSLbQaMXllgEGSIn4H0FrDzHs&s" alt="Cookie"></a>
 		<p>Click the cookie to earn points!</p>
 		<p id="score">Score: 0</p>
+		<p id="level">Level: 1</p>
+		<button id="extra-clicks-btn" onclick="buyClicks()">Extra clicks for 50 points</button>
 	</div>
 
 	<script src="script.js"></script>

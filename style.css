@@ -1,24 +1,46 @@
-#cookie {
-	width: 300px;
-	height: 300px;
-	margin-top: 50px;
-	cursor: pointer;
-}
-
-
-button {
-	display: block;
-	margin: 0 auto;
-	font-size: 24px;
-	padding: 10px 20px;
-	border-radius: 10px;
-	background-color: #4CAF50;
-	color: white;
-	cursor: pointer;
-}
-.container {
-	max-width: 600px;
+#game {
+	width: 500px;
 	margin: 0 auto;
 	text-align: center;
+	position: relative;
 }
 
+#cookie {
+	width: 200px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#cookie.active {
+	transform: translateY(5px);
+}
+
+#extra-clicks-btn {
+	margin-top: 10px;
+}
+
+#store {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	background-color: #EEE;
+	border: 1px solid #CCC;
+}
+
+#store h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#store ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#store li {
+	margin-bottom: 5px;
+}
