@@ -5,13 +5,17 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div id="scoreboard">
+		<p>Score: <span id="score-display">0</span></p>
+		<p>Level: <span id="level-display">1</span></p>
+		<p>Clicks worth: <span id="clicks-worth-display">1</span></p>
+		<p>Extra box: <span id="extra-box-display"></span></p>
+	</div>
 	<h1>Cookie Clicker Game</h1>
 	<div id="game">
-		<a href="#"><img id="cookie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYj7iOoATAvOu1h8uSLbQaMXllgEGSIn4H0FrDzHs&s" alt="Cookie"></a>
+		<a href="#" onclick="cookieClick()"><img id="cookie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYj7iOoATAvOu1h8uSLbQaMXllgEGSIn4H0FrDzHs&s" alt="Cookie"></a>
 		<p>Click the cookie to earn points!</p>
-		<p id="score">Score: 0</p>
-		<p id="level">Level: 1</p>
-		<button id="extra-clicks-btn" onclick="buyClicks()">Extra clicks for 50 points</button>
+		<button id="extra-clicks-btn" onclick="buyExtraClicks()">Extra clicks for 50 points</button>
 	</div>
 
 	<script src="script.js"></script>
