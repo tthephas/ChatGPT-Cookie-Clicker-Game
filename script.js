@@ -1,7 +1,8 @@
 // Game variables
 let score = 0;
 let level = 1;
-let clicksWorth = 1;
+let clicksWorth = level;
+
 
 // DOM variables
 const scoreDisplay = document.getElementById('score-display');
@@ -12,11 +13,13 @@ const cookie = document.getElementById('cookie');
 const extraClicksBtn = document.getElementById('extra-clicks-btn');
 
 function cookieClick() {
-  score += clicksWorth;
-  updateScore();
-  levelUp();
-  animateCookie();
-}
+    clicksWorth = 1; // update clicksWorth to 1
+    score += clicksWorth;
+    updateScore();
+    levelUp();
+    animateCookie();
+  }
+  
 
 cookie.addEventListener('click', cookieClick);
 
